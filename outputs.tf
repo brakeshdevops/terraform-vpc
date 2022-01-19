@@ -16,3 +16,9 @@ output "PUBLIC_SUBNET_CIDR" {
 output "PRIVATE_SUBNET_CIDR" {
   value=var.PRIVATE_VPC_CIDR
 }
+output "DEFAULT_VPC_ID" {
+  value = data.aws_vpc.default.id
+}
+output "DEFAULT_VPC_CIDR" {
+  value = data.aws_vpc.default.cidr_block
+}
